@@ -1,0 +1,19 @@
+alias lt='ls --human-readable --size -1 -S --classify'
+alias ls='ls --color=auto -h'
+alias ll='ls -l'
+alias la='ls -a'
+alias sl="ls"
+
+alias grep='grep --color=auto -i'
+alias mkdir='mkdir -pv'
+# update on one command
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+# mount drives
+alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | egrep ^/dev/ | sort"
+
+alias cpv='rsync -ah --info=progress2'
+
+alias ports='sudo netstat -tulanp'
+
+alias totalusage='df -hl --total | grep total'
