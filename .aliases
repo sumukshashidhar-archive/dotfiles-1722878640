@@ -17,3 +17,6 @@ alias cpv='rsync -ah --info=progress2'
 alias ports='sudo netstat -tulanp'
 
 alias totalusage='df -hl --total | grep total'
+
+alias cp='cp -r'
+alias rm='rm -r'
